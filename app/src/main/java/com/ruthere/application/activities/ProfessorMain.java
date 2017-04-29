@@ -125,6 +125,7 @@ public class ProfessorMain extends AppCompatActivity
         int id = item.getItemId();
         if (id == R.id.action_changepass) {
             counter = -1;
+            //try
             AlertDialog.Builder alertDialog = new AlertDialog.Builder(this);
             alertDialog.setTitle("Change Password");
             alertDialog.setMessage("Type your new password:");
