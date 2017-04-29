@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single">
+        <item android:id="@+id/nav_listprof" android:icon="@android:drawable/ic_menu_camera"
+            android:title="List of Professors" />
+        <item android:id="@+id/nav_liststudent" android:icon="@android:drawable/ic_menu_gallery"
+            android:title="List of Students" />
+        <item android:id="@+id/nav_slideshow" android:icon="@android:drawable/ic_menu_slideshow"
+            android:title="Log out" />
+    </group>
+
+</menu>

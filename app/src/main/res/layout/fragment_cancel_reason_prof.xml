@@ -1,0 +1,67 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.ruthere.application.activities.com.ruthere.application.fragment.RejectReason_Prof">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="212.5dp"
+        android:layout_gravity="center">
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:id="@+id/editText_cancel_reason"
+            android:hint="Type your reason here."
+            android:layout_alignParentStart="true"
+            android:layout_above="@+id/button_cancel_cancel"
+            android:fontFamily="casual"
+            android:inputType="textMultiLine"
+            android:layout_below="@+id/textView"
+            android:layout_alignParentEnd="true" />
+
+        <Button
+            android:text="CANCEL"
+            android:layout_width="160dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/button_cancel_cancel"
+            android:layout_gravity="bottom|right"
+            android:fontFamily="casual"
+            android:textStyle="normal|bold"
+            android:backgroundTint="@color/button"
+            android:textColor="@color/colorIcons"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentStart="true" />
+
+        <Button
+            android:text="Confirm"
+            android:layout_width="160dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/button_cancel_confirm"
+            android:layout_gravity="bottom|right"
+            android:onClick="cancel"
+            android:fontFamily="casual"
+            android:textStyle="normal|bold"
+            android:backgroundTint="@color/button"
+            android:textColor="@color/colorIcons"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentEnd="true" />
+
+        <TextView
+            android:text="Reason For Cancelling:"
+            android:textStyle="bold"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/textView"
+            android:textColor="#000"
+            android:textSize="18sp"
+            android:fontFamily="casual"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentStart="true"
+            android:layout_marginTop="12dp" />
+
+    </RelativeLayout>
+
+</FrameLayout>

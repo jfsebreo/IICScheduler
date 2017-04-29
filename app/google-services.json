@@ -1,0 +1,99 @@
+{
+  "project_info": {
+    "project_number": "1042257707602",
+    "firebase_url": "https://ruthere-5a89f.firebaseio.com",
+    "project_id": "ruthere-5a89f",
+    "storage_bucket": "ruthere-5a89f.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1042257707602:android:64d9eafbc92f224c",
+        "android_client_info": {
+          "package_name": "com.example.jinnilin.firebasetry"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1042257707602-g9jgo3e9p9ahvgc8v49dchb2iiqbs4oa.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.jinnilin.firebasetry",
+            "certificate_hash": "01075c23b7176b030801e5223ceea7fa138edc0e"
+          }
+        },
+        {
+          "client_id": "1042257707602-orr1tmidccq92rnk04d8c1tj9r4i8ma4.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB4tk8G4DgaDZ_VSroj2sJwd6T8zBI-l9k"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1042257707602-orr1tmidccq92rnk04d8c1tj9r4i8ma4.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1042257707602:android:6d46df924fbdc126",
+        "android_client_info": {
+          "package_name": "com.compscitutorials.basigarcia.navigationdrawervideotutorial"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1042257707602-m5sdn0e8pta1ak0ln7sj5l3fs6shrvda.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.compscitutorials.basigarcia.navigationdrawervideotutorial",
+            "certificate_hash": "4dc1d60aabce664c9936ddb411f7a22484848cde"
+          }
+        },
+        {
+          "client_id": "1042257707602-orr1tmidccq92rnk04d8c1tj9r4i8ma4.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB4tk8G4DgaDZ_VSroj2sJwd6T8zBI-l9k"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1042257707602-orr1tmidccq92rnk04d8c1tj9r4i8ma4.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

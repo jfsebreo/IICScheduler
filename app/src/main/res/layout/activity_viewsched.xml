@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_pending_page"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.ruthere.application.activities.ViewSched"
+    android:background="@drawable/bg">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView_section_cancel"
+        android:fontFamily="casual"
+        android:text="Section"
+        android:textStyle="normal|bold"
+        android:layout_below="@+id/textView_username_cancel"
+        android:layout_toEndOf="@+id/profileCancel" />
+
+    <ImageView
+        android:id="@+id/profileCancel"
+        android:layout_width="90dp"
+        android:layout_height="90dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true"
+        android:src="@mipmap/def_prof" />
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:id="@+id/FragmentContainer1"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true">
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_above="@+id/FragmentContainer1"
+        android:layout_alignParentStart="true"
+        android:id="@+id/linearLayout">
+
+        <Button
+            android:id="@+id/button_cancel_cancel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_centerVertical="true"
+            android:layout_weight="1"
+            android:backgroundTint="@color/button"
+            android:fontFamily="casual"
+            android:onClick="toggleFragmentView1"
+            android:text="Cancel"
+            android:textColor="@color/colorIcons"
+            android:textStyle="normal|bold" />
+
+
+    </LinearLayout>
+
+    <TextView
+        android:text="Reason: "
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView2"
+        android:fontFamily="casual"
+        android:textStyle="normal|bold"
+        android:textSize="18dp"
+        android:layout_below="@+id/profileCancel"
+        android:layout_toStartOf="@+id/textView_schedule_cancel" />
+
+    <TextView
+        android:text="TextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView2"
+        android:layout_alignStart="@+id/textView2"
+        android:layout_marginTop="28dp"
+        android:id="@+id/textView_reason_cancel"
+        android:textSize="18dp"
+        android:textColor="@android:color/background_dark" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView_name_cancel"
+        android:fontFamily="casual"
+        android:text="Section"
+        android:textStyle="normal|bold"
+        android:layout_alignParentTop="true"
+        android:layout_toEndOf="@+id/profileCancel" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView_username_cancel"
+        android:fontFamily="casual"
+        android:text="Section"
+        android:textStyle="normal|bold"
+        android:layout_below="@+id/textView_name_cancel"
+        android:layout_toEndOf="@+id/profileCancel" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView_schedule_cancel"
+        android:fontFamily="casual"
+        android:text="Section"
+        android:textStyle="normal|bold"
+        android:layout_below="@+id/textView_section_cancel"
+        android:layout_toEndOf="@+id/profileCancel" />
+
+    <Button
+        android:id="@+id/buttonAttachment"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="attachments"
+        android:backgroundTint="@color/button"
+        android:text="Download Attachment"
+        android:visibility="invisible"
+        android:layout_below="@+id/profileCancel"
+        android:layout_alignParentEnd="true" />
+
+</RelativeLayout>

@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_pending_page"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:background="@drawable/bg"
+    tools:context="com.ruthere.application.activities.AcceptRejectSchedPage">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="casual"
+        android:text="Section"
+        android:textSize="14sp"
+        android:textStyle="normal|bold"
+        android:id="@+id/textView_username_pending"
+        android:layout_below="@+id/textView_name_pending"
+        android:layout_toEndOf="@+id/ImageView_profile_pending" />
+
+    <ImageView
+        android:id="@+id/ImageView_profile_pending"
+        android:layout_width="90dp"
+        android:layout_height="90dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true"
+        android:src="@mipmap/def_prof" />
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_above="@+id/FragmentContainer1"
+        android:layout_alignParentStart="true"
+        android:id="@+id/linearLayout">
+
+        <Button
+            android:text="Reject"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/button_reject"
+            android:onClick="toggleFragmentView1"
+            android:backgroundTint="@color/button"
+            android:textColor="@color/colorIcons"
+            android:fontFamily="casual"
+            android:textStyle="normal|bold"
+            android:layout_centerVertical="true"
+            android:layout_alignParentStart="true"
+            android:layout_weight="1" />
+
+        <Button
+            android:id="@+id/button_approve"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:layout_alignBaseline="@+id/button_reject"
+            android:layout_alignBottom="@+id/button_reject"
+            android:layout_alignParentEnd="true"
+            android:layout_weight="1"
+            android:backgroundTint="@color/button"
+            android:fontFamily="casual"
+            android:onClick="accept"
+            android:text="Approve"
+            android:textColor="@color/colorIcons"
+            android:textStyle="normal|bold" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:id="@+id/FragmentContainer1"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true">
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView_name_pending"
+        android:fontFamily="casual"
+        android:text="Name"
+        android:layout_alignParentTop="true"
+        android:layout_toEndOf="@+id/ImageView_profile_pending"
+        android:textSize="14dp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:text="Reason: "
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView2"
+        android:fontFamily="casual"
+        android:textStyle="normal|bold"
+        android:textSize="18dp"
+        android:layout_below="@+id/ImageView_profile_pending"
+        android:layout_toStartOf="@+id/textView_schedule_pending"
+        android:layout_marginTop="17dp" />
+
+    <TextView
+        android:text="TextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView_reason_pending"
+        android:textColor="@color/colorPrimaryText"
+        android:textSize="18dp"
+        android:layout_below="@+id/textView2"
+        android:layout_alignStart="@+id/textView2"
+        android:layout_marginTop="19dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="casual"
+        android:text="Section"
+        android:textSize="14dp"
+        android:textStyle="normal|bold"
+        android:id="@+id/textView_section_pending"
+        android:layout_below="@+id/textView_username_pending"
+        android:layout_toEndOf="@+id/ImageView_profile_pending" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:id="@+id/textView_schedule_pending"
+
+        android:fontFamily="casual"
+        android:text="Monday"
+        android:textSize="14sp"
+        android:textStyle="normal|bold"
+        android:layout_below="@+id/textView_section_pending"
+        android:layout_toEndOf="@+id/ImageView_profile_pending" />
+
+    <Button
+        android:id="@+id/buttonAttachment"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="attachments"
+        android:backgroundTint="@color/button"
+        android:text="Download Attachment"
+        android:visibility="invisible"
+        android:layout_alignBaseline="@+id/textView2"
+        android:layout_alignBottom="@+id/textView2"
+        android:layout_alignParentEnd="true" />
+</RelativeLayout>
